@@ -1,0 +1,51 @@
+class Strings{
+  static const String splash = 'assets/images/splash.png';
+  static const String bigCart = 'assets/images/bigCart.png';
+  static const String login = 'assets/images/login.png';
+  static const String signup = 'assets/images/signup.png';
+  static const String home = 'assets/images/home.png';
+  static const String vegetables = 'assets/categories/vegetables.svg';
+  static const String fruits = 'assets/categories/fruits.svg';
+  static const String beverages = 'assets/categories/beverages.svg';
+  static const String grocery = 'assets/categories/grocery.svg';
+  static const String edibleOil = 'assets/categories/edible_oil.svg';
+  static const String houseHold = 'assets/categories/vacuum.svg';
+  static const String arrowForwardIos = 'assets/icons/arrow_forward_ios.svg';
+  static const String backArrow = 'assets/icons/back_arrow.svg';
+  static const String delete = 'assets/icons/delete.svg';
+  static const String email = 'assets/icons/email.svg';
+  static const String filter = 'assets/icons/filter.svg';
+  static const String heartFill = 'assets/icons/heart_fill.svg';
+  static const String heartOutline = 'assets/icons/heart_outline.svg';
+  static const String lock = 'assets/icons/lock.svg';
+  static const String search = 'assets/icons/search.svg';
+  static const String shoppingBag = 'assets/icons/shopping_bag.svg';
+  static const String telephone = 'assets/icons/telephone.svg';
+  static const String profile = 'assets/icons/profile.svg';
+  static const String address = 'assets/icons/address.svg';
+  static const String zipCode = 'assets/icons/zip_code.svg';
+  static const String city = 'assets/icons/city.svg';
+  static const String country = 'assets/icons/country.svg';
+  static const String congrats = 'assets/icons/congrats.svg';
+  static const String homeIcon = 'assets/icons/home_icon.svg';
+  static const String order = 'assets/icons/order.svg';
+  static const String creditCard = 'assets/icons/credit_cards.svg';
+  static const String transactions = 'assets/icons/transactions.svg';
+  static const String notification = 'assets/icons/notification.svg';
+  static const String signOut = 'assets/icons/signout.svg';
+  static const String starFill = 'assets/icons/star_fill.svg';
+  static const String starHalf = 'assets/icons/star_half.svg';
+  static const String starOutline = 'assets/icons/star_outline.svg';
+  static const String toggleFill = 'assets/icons/toggle_fill.svg';
+  static const String toggleOutline = 'assets/icons/toggle_outline.svg';
+  static const String orderBox = 'assets/icons/order_box.svg';
+  static const String arrowDownwardCircular = 'assets/icons/arrow_downward_circular.svg';
+  static const String masterCard = 'assets/icons/master_card.svg';
+  static const String visa = 'assets/icons/visa.svg';
+  static const String paypal = 'assets/icons/paypal.svg';
+
+  /// Lottie
+  static const String success = 'assets/lottie/success.json';
+  static const String shoppingCart = 'assets/lottie/shopping_cart.json';
+  static const String searchNotFound = 'assets/lottie/search_not_found.json';
+}
