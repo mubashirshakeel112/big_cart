@@ -12,7 +12,6 @@ import 'package:big_cart/widgets/custom_cards.dart';
 import 'package:big_cart/widgets/custom_snack_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:shimmer/shimmer.dart';
 
 class ProductsView extends ConsumerStatefulWidget {
   static const String id = '/products_view';

@@ -1,42 +1,3 @@
-// import 'package:big_cart/constants/app_colors.dart';
-// import 'package:big_cart/constants/strings.dart';
-// import 'package:big_cart/constants/typography.dart';
-// import 'package:big_cart/presentation/home/home_view.dart';
-// import 'package:big_cart/widgets/custom_button.dart';
-// import 'package:flutter/material.dart';
-// import 'package:flutter_svg/flutter_svg.dart';
-// import 'package:lottie/lottie.dart';
-//
-// class CongratsView extends StatelessWidget {
-//   static const String id = '/congrats_view';
-//   final String orderId;
-//   const CongratsView({super.key, required this.orderId});
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       body:  Column(
-//         mainAxisAlignment: MainAxisAlignment.center,
-//         children: [
-//           SvgPicture.asset(Strings.congrats),
-//           SizedBox(height: 45,),
-//           Text('Congrats!', style: interSemiBold.copyWith(fontSize: 24, color: AppColors.black),),
-//           SizedBox(height: 8,),
-//           Text('Your Order #$orderId is Successfully Received', style: interRegular.copyWith(fontSize: 16), textAlign: TextAlign.center,),
-//           // Spacer(),
-//           SizedBox(height: 50,),
-//             Padding(
-//               padding: const EdgeInsets.symmetric(horizontal: 17, vertical: 20),
-//               child: PrimaryButton(onPressed: (){
-//                 Navigator.pushReplacementNamed(context, HomeView.id);
-//               }, title: 'Go to Home',),
-//             ),
-//         ],
-//       ),
-//     );
-//   }
-// }
-
 import 'package:big_cart/constants/app_colors.dart';
 import 'package:big_cart/constants/strings.dart';
 import 'package:big_cart/constants/typography.dart';
@@ -74,15 +35,11 @@ class _CongratsViewState extends ConsumerState<CongratsView> {
 
   @override
   Widget build(BuildContext context) {
-    final productsState = ref.watch(productsProvider);
-    final cartState = ref.watch(cartProvider);
     return Scaffold(
       body: Center(
         child: AnimatedSwitcher(
           duration: const Duration(milliseconds: 700),
           transitionBuilder: (child, animation) {
-            // Agar naya child aaraha hai to fade in + scale up
-            // Agar purana jaa raha hai to fade out + shrink
             final inAnimation = CurvedAnimation(parent: animation, curve: Curves.easeOutBack);
             final outAnimation = CurvedAnimation(parent: animation, curve: Curves.easeIn);
 

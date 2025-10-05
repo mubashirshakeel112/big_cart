@@ -28,7 +28,6 @@ class _CreditCardViewState extends State<CreditCardView> {
           PrimaryAppBar(title: 'Add Credit Card', statusBarHeight: statusBarHeight),
           Expanded(
             child: ListView(
-              // crossAxisAlignment: CrossAxisAlignment.center,
               padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 33),
               children: [
                 Container(

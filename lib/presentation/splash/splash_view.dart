@@ -1,11 +1,9 @@
 import 'package:big_cart/constants/strings.dart';
 import 'package:big_cart/constants/typography.dart';
-import 'package:big_cart/presentation/dashboard/dashboard_view.dart';
 import 'package:big_cart/presentation/home/home_view.dart';
 import 'package:big_cart/presentation/login/login_view.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 class SplashView extends StatefulWidget {
   static const String id = '/splash_view';

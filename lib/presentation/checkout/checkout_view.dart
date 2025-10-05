@@ -1,17 +1,14 @@
 import 'package:big_cart/constants/app_colors.dart';
 import 'package:big_cart/constants/strings.dart';
-import 'package:big_cart/domain/models/checkout_model.dart';
 import 'package:big_cart/presentation/cart/notifier/cart_notifier.dart';
 import 'package:big_cart/presentation/checkout/notifier/checkout_notifier.dart';
 import 'package:big_cart/presentation/congrats/congrats_view.dart';
-import 'package:big_cart/presentation/home/home_view.dart';
 import 'package:big_cart/presentation/profile/notifier/profile_notifier.dart';
 import 'package:big_cart/widgets/custom_app_bar.dart';
 import 'package:big_cart/widgets/custom_button.dart';
 import 'package:big_cart/widgets/custom_loader.dart';
 import 'package:big_cart/widgets/custom_snack_bar.dart';
 import 'package:big_cart/widgets/custom_text_field.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';

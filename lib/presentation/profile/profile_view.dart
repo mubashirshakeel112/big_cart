@@ -5,7 +5,6 @@ import 'package:big_cart/presentation/about/about_me_view.dart';
 import 'package:big_cart/presentation/address/add_address_view.dart';
 import 'package:big_cart/presentation/cart/notifier/cart_notifier.dart';
 import 'package:big_cart/presentation/credit_cards/credit_cards_view.dart';
-import 'package:big_cart/presentation/favourite/favourite_view.dart';
 import 'package:big_cart/presentation/login/login_view.dart';
 import 'package:big_cart/presentation/notification/notification_view.dart';
 import 'package:big_cart/presentation/order/my_orders_view.dart';
@@ -133,13 +132,6 @@ class _ProfileViewState extends ConsumerState<ProfileView> {
                         Navigator.pushNamed(context, MyOrdersView.id);
                       },
                     ),
-                    // ProfileView._menuTile(
-                    //   icon: Strings.heartOutline,
-                    //   title: "My Favorites",
-                    //   onPressed: () {
-                    //     Navigator.pushNamed(context, FavouriteView.id);
-                    //   },
-                    // ),
                     ProfileView._menuTile(
                       icon: Strings.address,
                       title: "My Address",
@@ -215,16 +207,6 @@ class _ProfileViewState extends ConsumerState<ProfileView> {
                             );
                           },
                         );
-                        // await ref.read(cartProvider.notifier).clear();
-                        // bool isLogout = await signOutNotifier.signOut();
-                        // if (isLogout) {
-                        //   Navigator.pushReplacementNamed(context, LoginView.id);
-                        //   CustomSnackBar.successSnackBar(
-                        //     context: context,
-                        //     title: 'Success',
-                        //     message: 'SignOut Successfully',
-                        //   );
-                        // }
                       },
                     ),
                     const SizedBox(height: 24),

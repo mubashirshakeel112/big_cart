@@ -26,20 +26,6 @@ class ForgotPasswordView extends StatelessWidget {
           final notifier = ref.watch(forgotPasswordProvider.notifier);
           return Column(
             children: [
-              // SizedBox(height: 63,),
-              // Padding(
-              //   padding: const EdgeInsets.symmetric(horizontal: 17),
-              //   child: Row(
-              //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              //     children: [
-              //       SvgPicture.asset(Strings.backArrow, color: AppColors.black,),
-              //       Text('Password Recovery', style: interMedium.copyWith(fontSize: 18, color: AppColors.black),),
-              //       Opacity(
-              //           opacity: 0,
-              //           child: SvgPicture.asset(Strings.backArrow, color: AppColors.black,)),
-              //     ],
-              //   ),
-              // ),
               SizedBox(height: 84,),
               Text('Forgot Password', style: interSemiBold.copyWith(fontSize: 25, color: AppColors.black),),
               SizedBox(height: 13,),

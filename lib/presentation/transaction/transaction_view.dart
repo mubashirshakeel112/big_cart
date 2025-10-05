@@ -76,32 +76,6 @@ class TransactionView extends StatelessWidget {
               ),
             ),
           );
-          // return Card(
-          //     elevation: 0,
-          //     color: AppColors.white,
-          //     shape: RoundedRectangleBorder(),
-          //     margin: EdgeInsets.only(bottom: 10),
-          //     child: ListTile(
-          //       contentPadding: EdgeInsets.symmetric(horizontal: 25, vertical: 14),
-          //       dense: true,
-          //       onTap: (){},
-          //       leading: SizedBox(
-          //         width: 72,
-          //         height: 72,
-          //         child: Container(
-          //           decoration: BoxDecoration(
-          //               color: AppColors.white3,
-          //               shape: BoxShape.circle
-          //           ),
-          //           alignment: Alignment.center,
-          //           child: SvgPicture.asset(items[index]['image']),
-          //         ),
-          //       ),
-          //       title: Text(items[index]['title'], style: interSemiBold.copyWith(fontSize: 15, color: AppColors.black),),
-          //       subtitle: Text(items[index]['subtitle'], style: interRegular.copyWith(fontSize: 10, color: AppColors.black),),
-          //       trailing: Text('\$${items[index]['price']}', style: interSemiBold.copyWith(fontSize: 15, color: AppColors.green),),
-          //     )
-          // );
         },
       ),
     );

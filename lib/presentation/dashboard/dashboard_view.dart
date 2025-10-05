@@ -61,7 +61,6 @@ class _DashboardViewState extends ConsumerState<DashboardView> {
   @override
   Widget build(BuildContext context) {
     final productState = ref.watch(productsProvider);
-    final productNotifier = ref.read(productsProvider.notifier);
     final favouriteNotifier = ref.read(favouriteProvider.notifier);
     final favouriteState = ref.watch(favouriteProvider);
     final cartNotifier = ref.read(cartProvider.notifier);
@@ -138,7 +137,6 @@ class _DashboardViewState extends ConsumerState<DashboardView> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text('Categories', style: interSemiBold.copyWith(fontSize: 18, color: AppColors.black)),
-                              // SvgPicture.asset(Strings.arrowForwardIos),
                             ],
                           ),
                         ),
@@ -210,12 +208,6 @@ class _DashboardViewState extends ConsumerState<DashboardView> {
                                 'Featured products',
                                 style: interSemiBold.copyWith(fontSize: 18, color: AppColors.black),
                               ),
-                              // GestureDetector(
-                              //   onTap: () {
-                              //     // Navigator.pushNamed(context, ProductsView.id);
-                              //   },
-                              //   child: SvgPicture.asset(Strings.arrowForwardIos),
-                              // ),
                             ],
                           ),
                         ),

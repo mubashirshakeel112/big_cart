@@ -14,7 +14,6 @@ import 'package:big_cart/widgets/custom_cards.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:shimmer/shimmer.dart';
 
 class CartView extends ConsumerStatefulWidget {
   static const String id = '/cart_view';
