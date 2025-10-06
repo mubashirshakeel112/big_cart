@@ -42,7 +42,7 @@ class SignupNotifier extends StateNotifier<SignupState> {
         if (context.mounted) {
           await setUser();
           CustomSnackBar.successSnackBar(context: context, title: 'Success', message: 'Signup Successfully');
-          Navigator.pushReplacementNamed(context, HomeView.id);
+          Navigator.pushNamedAndRemoveUntil(context, HomeView.id, (Route<dynamic> route) => false);
         }
       }else{
         if (context.mounted) {

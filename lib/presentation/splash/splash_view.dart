@@ -18,7 +18,7 @@ class _SplashViewState extends State<SplashView> {
   @override
   void initState() {
     Future.delayed(Duration(seconds: 3), () {
-      if(context.mounted) Navigator.pushReplacementNamed(context, checkUser());
+      if(context.mounted) Navigator.pushNamedAndRemoveUntil(context, checkUser(), (Route<dynamic> route) => false);
     });
     super.initState();
   }

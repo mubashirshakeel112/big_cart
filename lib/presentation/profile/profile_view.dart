@@ -180,7 +180,7 @@ class _ProfileViewState extends ConsumerState<ProfileView> {
                                         await ref.read(cartProvider.notifier).clear();
                                         bool isLogout = await signOutNotifier.signOut();
                                         if (isLogout) {
-                                          Navigator.pushReplacementNamed(context, LoginView.id);
+                                          Navigator.pushNamedAndRemoveUntil(context, LoginView.id, (Route<dynamic> route)=> false);
                                           CustomSnackBar.successSnackBar(
                                             context: context,
                                             title: 'Success',

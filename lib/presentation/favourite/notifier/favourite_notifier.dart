@@ -27,41 +27,22 @@ class FavouriteNotifier extends StateNotifier<FavouriteState> {
           favourites: state.favourites.where((fav) => fav.id != productId).toList(),
         );
 
-        // firestore update in background
         await _favouriteRepository.deleteFavourite(productId);
       } else {
         final product = await _productsRepository.getProductById(productId);
 
-        // add to local state immediately
         state = state.copyWith(
           favourites: [...state.favourites, product],
         );
 
-        // firestore update in background
         final favourite = FavouriteModel(id: productId, createdAt: DateTime.now());
         await _favouriteRepository.postFavourite(favourite);
       }
     } catch (e) {
-      // agar firestore fail ho jaye to ideally rollback karna chahiye
       await getFavourites();
       throw Exception(e.toString());
     }
   }
-
-
-  // Future<void> postFavourite(String productId) async {
-  //   try {
-  //     final favourite = FavouriteModel(id: productId, createdAt: DateTime.now());
-  //       if(isFavourite(productId)){
-  //         await _favouriteRepository.deleteFavourite(productId);
-  //       }else{
-  //         await _favouriteRepository.postFavourite(favourite);
-  //       }
-  //     await getFavourites();
-  //   } catch (e) {
-  //     throw Exception(e.toString());
-  //   }
-  // }
 
   Future<void> getFavourites() async {
     try {

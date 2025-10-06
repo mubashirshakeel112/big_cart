@@ -28,7 +28,7 @@ class LoginNotifier extends StateNotifier<LoginState>{
       if(isLogin){
         if(context.mounted){
           CustomSnackBar.successSnackBar(context: context, title: 'Success', message: 'LoginSuccessfully');
-          Navigator.pushReplacementNamed(context, HomeView.id);
+          Navigator.pushNamedAndRemoveUntil(context, HomeView.id, (Route<dynamic> route) => false);
         }
       }else{
         CustomSnackBar.errorSnackBar(context: context, title: 'Error', message: 'Login Failed');
